@@ -1,3 +1,3 @@
 # PlatziVideo-react
 
-#Proyecto de Platzi video en react
+## Proyecto de Platzi video en react
