@@ -68,7 +68,7 @@ const Header = (props) => {
   );
 };
 
-header.propTypes = {
+Header.propTypes = {
   user: propTypes.object.isRequired,
   logoutRequest: propTypes.func.isRequired,
 };
