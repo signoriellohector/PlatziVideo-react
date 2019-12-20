@@ -7,7 +7,7 @@ import { registerRequest } from '../actions';
 import '../assets/styles/components/Register.scss';
 import '../assets/styles/Media.scss';
 
-const Register = () => {
+const Register = (props) => {
   const [form, setValues] = useState({
     email: '',
     name: '',
@@ -22,7 +22,7 @@ const Register = () => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefaut();
+    event.preventDefault();
     props.registerRequest(form);
     props.history.push('/');
   };
@@ -53,11 +53,9 @@ const Register = () => {
             placeholder='Contraseña'
             onChange={handleInput}
           />
-          <button className='button' type='submit'>Registrarme</button>
+          <button className='button'>Registrarme</button>
         </form>
-        <Link to='/login'>
-          Iniciar sesión
-        </Link>
+        <Link to='/login'>Iniciar sesión</Link>
       </section>
     </section>
   );
